@@ -378,6 +378,7 @@ let
       };
     components' = mkComponentSet {
       inherit version;
+      renames = {};
       platform = target;
       srcs = mapAttrs hashToSrc components;
     };
