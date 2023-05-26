@@ -9,7 +9,7 @@
 # Set of pname -> src
 , srcs
 # { clippy.to = "clippy-preview"; }
-, renames
+, renames ? {}
 }:
 let
   inherit (lib) elem mapAttrs optional optionalString;
